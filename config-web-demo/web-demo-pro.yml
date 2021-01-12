@@ -24,3 +24,7 @@ management:
       exposure:
         include: info,health
 
+
+user:
+  name: root
+  pwd: 123456
