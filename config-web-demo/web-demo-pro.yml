@@ -25,6 +25,5 @@ management:
         include: "*"
 
 
-user:
-  name: root
-  pwd: 1234567894564564564ssssssssssssssssssssssssss
+evn:
+  dev

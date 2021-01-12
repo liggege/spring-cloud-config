@@ -24,3 +24,5 @@ management:
       exposure:
         include: info,health
 
+evn:
+  dev
