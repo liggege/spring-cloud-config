@@ -16,6 +16,6 @@ eureka:
   client:
 #      fetchRegistry: false #表示自己是注册中心，职责是维护服务，而不是调用服务 单机设置false
 #      register-with-eureka: false #不向自己注册 单机设置false
-      service-url:
-        defaultZone: http://admin:123456@eureka-8091:8091/eureka/,http://admin:123456@eureka-8092:8092/eureka/
+#      service-url:
+#        defaultZone: http://admin:123456@eureka-8091:8091/eureka/,http://admin:123456@eureka-8092:8092/eureka/ #使用config discover 需要放着bootstrap中
 
