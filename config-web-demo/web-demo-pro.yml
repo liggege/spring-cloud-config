@@ -25,5 +25,5 @@ management:
         include: "*"
 
 
-evn:
+env:
   dev
