@@ -26,5 +26,5 @@ management:
 
 
 user:
-  name: admin
-  pwd: 123456
+  name: root
+  pwd: 123456789
