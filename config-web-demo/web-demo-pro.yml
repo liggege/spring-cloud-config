@@ -39,13 +39,18 @@ feign:
       loggerLevel: FULL #NONE ,BASIC,HEADERS,FULL
   hystrix:
     enabled: true #开启熔断
-
 hystrix:
   command:
     default:
       execution:
         timeout:
-          enabled: true
+          enabled: true #是否开始超时熔断，如果为false，则熔断机制只在服务不可用时开启（spring-cloud-starter-openfeign中的HystrixCommandProperties默认为true）
         isolation:
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 60000 #设置超时熔断时间（spring-cloud-starter-openfeign中的HystrixCommandProperties默认为1000毫秒）
+ribbon: #Feign调用默认是使用Ribbon进行负载均衡的，所以我们还需要设置关于Ribbon的超时。
+  ReadTimeout: 5000 #单位毫秒
+  ConnecTimeout: 5000
+
+logging:
+  level: debug
