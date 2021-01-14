@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: web-demo
+  devtools:
+    restart:
+      enabled: true #开启热部署
 
 info: #spring-boot-starter-actuator info
   app:
