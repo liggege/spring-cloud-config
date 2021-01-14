@@ -54,4 +54,4 @@ ribbon: #Feign调用默认是使用Ribbon进行负载均衡的，所以我们还
 
 logging:
   level:
-    com.maidong.webdemo.api.FeginClientTest: debug
+    com.maidong.webdemo.api: debug
