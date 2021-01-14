@@ -29,3 +29,8 @@ management:
 
 env:
   dev
+
+
+feign:
+  httpclient:
+    connection-timeout: 5000

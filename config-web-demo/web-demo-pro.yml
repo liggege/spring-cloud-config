@@ -30,3 +30,7 @@ management:
 
 env:
   test
+
+feign:
+  httpclient:
+    connection-timeout: 5000
