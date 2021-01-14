@@ -52,4 +52,5 @@ ribbon: #Feign调用默认是使用Ribbon进行负载均衡的，所以我们还
   ConnecTimeout: 5000
 
 logging:
-  level: debug
+  level:
+    com.maidong.webdemo.test: debug
